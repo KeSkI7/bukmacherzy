@@ -144,32 +144,6 @@ h3{
 #content{
   margin-top: 80px;
 }
- /* /Strona filmu/ */
-
-.in-movie{
-  width: 400px;
-  height: auto; 
-  margin-left: 150px;
-  float: left;
-}
-.overview{
-  float: left;
-  color: #fff;
-  margin-left: 100px;
-  background-color: #292929;
-  border: #333 1px solid;
-  border-radius: 5px;
-  width: 600px;
-  height: auto;
-  font-size: 22px;
-}
-.relase{
-  color: #fff;
-}
-.tag{
-  margin-left: 100px;
-  color: #fff;
-}
 
 /* /Media/ */
 
@@ -277,9 +251,53 @@ h3{
    }
  }
 
+
+  /* /Strona filmu/ */
+
+.in-movie{
+  width: 400px;
+  height: auto; 
+  margin-left: 150px;
+  float: left;
+}
+.overview{
+  float: left;
+  color: #fff;
+  background-color: #292929;
+  border: #333 1px solid;
+  border-radius: 5px;
+  width: 600px;
+  height: auto;
+  font-size: 22px;
+}
+
+.relase{
+  color: #fff;
+}
+.tag{
+ color: #fff;
+}
+
 .tagline{
   color: #fff;
 }
+
+.genre{
+  
+  text-align:left;
+}
+
 .genres{
   color: #fff;
+ 
 }
+
+.element{
+  height:800px;
+}
+
+.content2{
+  display:flex;
+  flex-direction:column;
+}
+

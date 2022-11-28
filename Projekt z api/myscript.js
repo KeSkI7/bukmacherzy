@@ -58,16 +58,18 @@ const moviePage = (id) => {
             const movies2 = document.createElement('div');
             movies2.classList.add('elements');
             movies2.innerHTML = `
+        <img class="in-movie" src="${IMG_URL + poster_path}">
+        <div class = "content2">
         <h2 class="title">${title}</h2>
         <p class="tagline">${tagline}</p>
-        <img class="in-movie" src="${IMG_URL + poster_path}">
         <h2 class="tag">Overview</h2>
         <div class="overview">${overview}</div>
-       <p class="relase">Data wydania: ${release_date}</p>
-       <h3>Genres</h3>
-       <ul>
+        <p class="relase">Data wydania: ${release_date}</p>
+        <h3 class = "genre" >Genres</h3>
+        <ul>
        ${genres.map(x => `<li class="genres">${x.name}</li>`).join('')}
-       </ul>
+        </ul>
+        </div>
         `;
             content.appendChild(movies2);
         })
