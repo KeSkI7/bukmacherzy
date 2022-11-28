@@ -131,9 +131,13 @@ footer{
 }
 
 .title{
+  color:#fff;
   text-align: center;
-  color: #fff;
 }
+.title2{
+  color: #FFA31A;
+}
+
 h3{
   color: #fff;
   text-align: center;
@@ -264,18 +268,20 @@ h3{
   float: left;
   color: #fff;
   background-color: #292929;
-  border: #333 1px solid;
   border-radius: 5px;
   width: 600px;
   height: auto;
-  font-size: 22px;
+  font-size: 19px;
+  margin-top: 5px;
 }
 
 .relase{
   color: #fff;
+  margin-top: 20px;
 }
 .tag{
  color: #fff;
+ margin-top: 20px;
 }
 
 .tagline{
@@ -283,17 +289,20 @@ h3{
 }
 
 .genre{
-  
+  margin-top: 20px;
   text-align:left;
 }
 
 .genres{
   color: #fff;
- 
+ margin-top: 5px;
 }
 
-.element{
+.elements{
   height:800px;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 65px;
 }
 
 .content2{
@@ -301,3 +310,33 @@ h3{
   flex-direction:column;
 }
 
+.director{
+  margin-top: 20px;
+color:#fff; 
+}
+
+
+.avgvote{
+  color: #fff;
+  margin-top: 10px;
+}
+
+.countvote{
+  color: #fff;
+}
+
+.ref{
+  color: #fff;
+  width: fit-content;
+  background-color: #FFA31A;
+  height: 30px;
+  display: block;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+}
+.ref:hover{
+box-shadow: #333 0px 5px 15px;
+color: #1B1B1B;
+transition: 1s;
+}

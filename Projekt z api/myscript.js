@@ -54,21 +54,31 @@ const moviePage = (id) => {
     fetch(MAIN_URL + '/movie/' + id + '?' + API_KEY)
         .then(res => res.json()).then(data => {
             console.log(data);
-            const { title, poster_path, release_date, overview, tagline, genres} = data;
+            const { title, poster_path, release_date, overview, tagline, genres, vote_average, vote_count} = data;
             const movies2 = document.createElement('div');
             movies2.classList.add('elements');
             movies2.innerHTML = `
+            <div class="photo">
         <img class="in-movie" src="${IMG_URL + poster_path}">
+        </div>
+            <div class="right">
         <div class = "content2">
-        <h2 class="title">${title}</h2>
+        <h2 class="title2">${title}</h2>
         <p class="tagline">${tagline}</p>
+
+
         <h2 class="tag">Overview</h2>
         <div class="overview">${overview}</div>
-        <p class="relase">Data wydania: ${release_date}</p>
-        <h3 class = "genre" >Genres</h3>
+        <p class="relase">Release date: ${release_date}</p>
+        <p class="director">Directior: </p>
+        <h3 class = "genre" >Genres: </h3>
         <ul>
        ${genres.map(x => `<li class="genres">${x.name}</li>`).join('')}
         </ul>
+        <p class="avgvote">Średnia ocen: ${vote_average.toFixed(2)}</p>
+        <p class="countvote">Liczba oddanych głosów: ${vote_count}</p><br>
+        <a class="ref" href="${'https://www.themoviedb.org/movie/' + id}" target="_blank">Odnośnik to drugiej strony</a>
+        </div>
         </div>
         `;
             content.appendChild(movies2);
