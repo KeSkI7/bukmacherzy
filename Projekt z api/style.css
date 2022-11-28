@@ -48,6 +48,7 @@ a{
 #user,#add,#logo{
   height:30px;
   width:30px;
+  
 }
 
 
@@ -56,6 +57,7 @@ a{
 
 #bukma{
   border: #292929 1px solid;
+  
 }
 #bukma #wstawka{
   margin-top: 10px;
@@ -64,9 +66,15 @@ a{
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+ 
 }
 #bukma #wstawka h1{
   color: #fff;
+  display:flex;
+  flex:wrap;
+  align-content:flex-start;
+  text-align: center;
+  margin-left:25%;
 }
 #bukma #wstawka h3{
   color: #FFA31A;
@@ -98,7 +106,7 @@ footer{
   text-transform: uppercase;
   clear: both;
 }
-/* Main */
+/* /Main/ */
 
 
 #main{
@@ -133,219 +141,11 @@ h3{
 }
 
 
-
-@media only screen and (max-width:1000px)  {
-  #bukma #wstawka{
-    margin-top: 12.5%;
-   
-  }
-}
-  
-  @media only screen and (max-width:800px){
-    #bukma #wstawka{
-      margin-top: 15%;
-     
-      
-      
-    }
-    .movie img{
-      width: 95%;
-    }
-  }
-    
-
-    @media only screen and (max-width:672px){
-      #bukma #wstawka{
-        margin-top: 17%;
-        
-      }
-
-    
-
-      #user,#add,#logo{
-        height:25px;
-        width:25px;
-      }
-
-      .navbar a {
-        
-          color: #fff;
-          padding: 5px 15px;
-          margin: 0 4px;
-          
-        
-      }
-    }
-
-    @media only screen and (max-width:600px) {
-      #bukma #wstawka{
-        margin-top: 19.5%;
-      }
-
-    
-
-      h1{
-        font-size:25px;
-      }
-
-      h3{
-        font-size:17px;
-      }
-      .navbar a {
-        padding: 5px 15px;
-        margin: 0 2px;
-        font-size:12.5px;
-      }
-      
-      
-      #user,#add,#logo{
-        height:24px;
-        width:24px;
-      }
-    }
-      
- 
-
-@media only screen and (max-width:570px){
-  #bukma #wstawka{
-    margin-top: 19.5%;
-  }
- 
-
-  h1{
-    font-size:25px;
-  }
-
-  h3{
-    font-size:17px;
-  }
-  .navbar a {
-    padding: 5px 12.5px;
-    margin: 0 2px;
-    font-size:12.5px
-  }
-  
-  
-  #user,#add,#logo{
-    height:21px;
-    width:21px;
-  }
-}
-
-@media only screen and (max-width:536px){
-  #bukma #wstawka{
-    margin-top: 19.5%;
-  }
-
-
-  h1{
-    font-size:25px;
-  }
-
-  h3{
-    font-size:17px;
-  }
-  .navbar a {
-    padding: 4px 8px;
-    margin: 0 2px;
-    font-size:12.5px
-  }
-  
-  
-  #user,#add,#logo{
-    height:21px;
-    width:21px;
-  }
-}
-
-
-
-@media only screen and (max-width:476px){
-  #bukma #wstawka{
-    margin-top: 22%;
-  }
-
- 
-
-  h1{
-    font-size:22px;
-  }
-
-  h3{
-    font-size:15px;
-  }
-  .navbar a {
-    padding: 3.5 px 6px;
-    margin: 0 2px;
-    font-size:12.5px
-  }
-  
-  
-  #user,#add,#logo{
-    height:21px;
-    width:21px;
-  }
-}
-
-  @media only screen and (max-width:442px){
-    #bukma #wstawka{
-      margin-top: 23.5%;
-    }
-
-   
-  
-    h1{
-      font-size:19px;
-    }
-  
-    h3{
-      font-size:14px;
-    }
-    .navbar a {
-      padding: 2 px 6px;
-      margin: 0 2px;
-      font-size:12.5px
-     
-    }
-    
-    
-    #user,#add,#logo{
-      height:19px;
-      width:19px;
-    }
-    
-  }
-
-    
-  @media only screen and (max-width:407px){
-    #bukma #wstawka{
-      margin-top: 25%;
-    }
-
-   
-  
-    h1{
-      font-size:15px;
-    }
-  
-    h3{
-      font-size:10px;
-    }
-    .navbar a {
-      padding: 1px 4px;
-      margin: 0 1px;
-      font-size:12px
-    }
-    
-    
-    #user,#add,#logo{
-      height:19px;
-      width:19px;
-    }
-}
 #content{
   margin-top: 80px;
 }
+ /* /Strona filmu/ */
+
 .in-movie{
   width: 400px;
   height: auto; 
@@ -370,3 +170,110 @@ h3{
   margin-left: 100px;
   
 }
+
+/* /Media/ */
+
+@media only screen and (max-width:700px){
+#user,#add,#logo{
+  height:29px;
+  width:29px;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 5px 15px;
+  margin: 0 4px;
+  font-size:13.5px;
+}
+  }
+
+@media only screen and (max-width:600px) {
+.navbar a {
+  padding: 5px 15px;
+  margin: 0 2px;
+  font-size:13px;
+}
+      
+#user,#add,#logo{
+ height:28px;
+  width:28px;
+}
+  }
+      
+ 
+
+@media only screen and (max-width:550px){
+.navbar a {
+  padding: 5px 12.5px;
+  margin: 0 2px;
+  font-size:12.5px
+}
+  
+#user,#add,#logo{
+  height:27px;
+  width:27px;
+}
+  }
+
+
+#user,#add,#logo{
+  height:26px;
+  width:26px;
+  }
+
+
+@media only screen and (max-width:450px){
+  .navbar a {
+  padding: 3.5 px 6px;
+  margin: 0 2px;
+  font-size:12px
+}
+
+#user,#add,#logo{
+  height:25px;
+  width:25px;
+  }
+}
+
+ @media only screen and (max-width:400px){
+ .navbar a {
+  padding: 2 px 6px;
+  margin: 0 2px;
+  font-size:11px
+     
+}
+
+#user,#add,#logo{
+  height:22px;
+  width:22px;
+  }
+}
+
+@media only screen and (max-width:380px){
+  .navbar a {
+   padding: 2 px 6px;
+   margin: 0 px;
+   font-size:10px
+      
+ }
+ 
+ #user,#add,#logo{
+   height:20px;
+   width:20px;
+   }
+ }
+
+ @media only screen and (max-width:360px){
+  .navbar a {
+   padding: 2 px 6px;
+   margin: 0 px;
+   font-size:9.5px
+      
+ }
+ 
+ #user,#add,#logo{
+   height:18px;
+   width:18px;
+   }
+ }
+
