@@ -120,15 +120,18 @@ footer{
   margin: 30px;
   overflow: hidden;
   cursor: pointer;
+  transition: 0.3s;
  }
 
  .movie img{
   width: 100%;
 }
 .movie:hover{
+  transform: scale(1.05);
+  transition: 0.3s;
   box-shadow: #FFA31A 0px 5px 15px;
- 
 }
+
 
 .title{
   color:#fff;

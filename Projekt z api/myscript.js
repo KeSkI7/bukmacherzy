@@ -47,7 +47,6 @@ form.addEventListener('submit', (e) => {
 })
 
 
-
 // Strona filmu
 const moviePage = (id) => {
     content.innerHTML = "";
