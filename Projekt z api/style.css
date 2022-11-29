@@ -120,14 +120,16 @@ footer{
   margin: 30px;
   overflow: hidden;
   cursor: pointer;
+  transition: 0.3s;
  }
 
  .movie img{
   width: 100%;
 }
 .movie:hover{
+  transform: scale(1.05);
+  transition: 0.3s;
   box-shadow: #FFA31A 0px 5px 15px;
- 
 }
 
 .title{
@@ -246,14 +248,16 @@ h3{
    padding: 2 px 6px;
    margin: 0 px;
    font-size:9.5px
-      
+  
  }
+
  
  #user,#add,#logo{
    height:18px;
    width:18px;
    }
- }
+ 
+  }
 
 
   /* /Strona filmu/ */
@@ -264,6 +268,7 @@ h3{
   margin-left: 150px;
   float: left;
 }
+
 .overview{
   float: left;
   color: #fff;
