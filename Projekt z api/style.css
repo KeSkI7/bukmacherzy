@@ -345,4 +345,5 @@ transition: 1s;
 }
 .actors{
   color: #fff;
+  max-width: 75%;
 }
