@@ -249,14 +249,16 @@ h3{
    padding: 2 px 6px;
    margin: 0 px;
    font-size:9.5px
-      
+  
  }
+
  
  #user,#add,#logo{
    height:18px;
    width:18px;
    }
- }
+ 
+  }
 
 
   /* /Strona filmu/ */
@@ -267,6 +269,7 @@ h3{
   margin-left: 150px;
   float: left;
 }
+
 .overview{
   float: left;
   color: #fff;
