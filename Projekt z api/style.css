@@ -340,3 +340,9 @@ box-shadow: #333 0px 5px 15px;
 color: #1B1B1B;
 transition: 1s;
 }
+#director{
+  color: #fff;
+}
+.actors{
+  color: #fff;
+}

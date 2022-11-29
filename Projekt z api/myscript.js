@@ -65,12 +65,9 @@ const moviePage = (id) => {
         <div class = "content2">
         <h2 class="title2">${title}</h2>
         <p class="tagline">${tagline}</p>
-
-
         <h2 class="tag">Overview</h2>
         <div class="overview">${overview}</div>
         <p class="relase">Release date: ${release_date}</p>
-        <p class="director">Directior: </p>
         <h3 class = "genre" >Genres: </h3>
         <ul>
        ${genres.map(x => `<li class="genres">${x.name}</li>`).join('')}
@@ -78,9 +75,30 @@ const moviePage = (id) => {
         <p class="avgvote">Średnia ocen: ${vote_average.toFixed(2)}</p>
         <p class="countvote">Liczba oddanych głosów: ${vote_count}</p><br>
         <a class="ref" href="${'https://www.themoviedb.org/movie/' + id}" target="_blank">Odnośnik to drugiej strony</a>
+        <p id="director"></p>
+        <div id="actors" class="actors">Aktorzy: </div>
         </div>
         </div>
         `;
-            content.appendChild(movies2);
+            
+
+
+        fetch(MAIN_URL + '/movie/' + id + '/credits?' + API_KEY)
+        .then(res => res.json()).then(data => {
+            console.log(data);
+            document.getElementById('director').innerHTML = "Reżyser: " + data.crew.filter(x => x.job === "Director")[0].name;
+            for(let i = 0; i < data.cast.length; i++){
+                if(i == data.cast.length - 1){
+                    document.getElementById('actors').innerHTML += data.cast[i].name;
+                }
+                else
+                document.getElementById('actors').innerHTML += data.cast[i].name + ", ";
+            }
+        })
+        
+        
+        
+        content.appendChild(movies2);
+
         })
 }
