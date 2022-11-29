@@ -347,3 +347,13 @@ transition: 1s;
   color: #fff;
   max-width: 75%;
 }
+
+.photo{
+  width: 50%;
+  height: auto;
+  float: left;
+}
+.right{
+  width: 50%;
+  height: auto;
+}
